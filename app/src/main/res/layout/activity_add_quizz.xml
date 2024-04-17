@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuizz"
+    android:background="@drawable/loginbkg"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrator"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Quiz"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:hint="Add a question"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_question_mark_24"
+                android:drawablePadding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Réponse 01"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/txtrep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:hint="Add an answer "
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/lampe"
+                android:drawablePadding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Réponse 02"
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/txtrep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:hint="Add an answer "
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/lampe"
+                android:drawablePadding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La bonne réponse "
+                android:textColor="@color/black"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/txtbonnerep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:hint=" Add the right answer "
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/done_4"
+                android:drawablePadding="8dp"
+                />
+
+            <Button
+                android:id="@+id/btnImportImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Import image"
+                android:onClick="importImage"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                />
+
+            <Button
+                android:id="@+id/btnAddQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+

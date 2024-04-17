@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499002613207",
+    "project_id": "login-register-firebase-1eb09",
+    "storage_bucket": "login-register-firebase-1eb09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499002613207:android:b0b5327388b63836f43f92",
+        "android_client_info": {
+          "package_name": "com.example.quizapp_bouzakri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVIIB0sthCQItjKSTuluSLJ0VEFsoILYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
